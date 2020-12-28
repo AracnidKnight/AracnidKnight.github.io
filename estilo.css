@@ -1,0 +1,104 @@
+*{
+    font-family: calibri;
+}
+
+table{
+    border-spacing: 0;
+    grid-area: perfil;
+    
+    width: 65%;
+    margin-left: 2em;
+    margin-top: 1.5em;
+}
+
+td{
+    border: 2px solid;
+}
+td:first-child{
+    border-right: 0;
+}
+td:first-child input{
+    width: 100%;
+}
+td:last-child{
+    border-left: 0;
+    width: 50px;
+}
+td:last-child input{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+tr:not(:first-child) td{
+    border-top: 0;
+}
+tr:last-child td button{
+    width: 100%;
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    
+    
+    grid-template-columns: 40% 1fr 0fr;
+    grid-template-rows: 7.5% 3% 10% auto;
+    grid-template-areas: 
+        "titulo titulo ."
+        ". . ."
+        "titulo_perfil titulo_habilitacion ."
+        "perfil dibujo ."
+    ;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 1.7em;
+    font-weight: 560;
+    font-family: arial;
+}
+
+#titulo{
+    grid-area: titulo;
+    font-size: 1.25em;
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    
+    font-size: 1.5em;
+    font-weight: 560;
+    font-family: arial;
+}
+#titulo label{
+    padding: 0 21.75em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#titulo label span{
+    display: flex;
+    align-items: center;
+}
+#titulo input{
+    font-size: 1em;
+}
+
+#btn_imprimir{
+    position: absolute;
+    bottom: 0;
+    
+    left: 40%;
+    width: 20%;
+    height: 5%;
+    
+    font-size: 1em;
+}
+
+#habilitacion{
+    margin-left: 8em;
+}

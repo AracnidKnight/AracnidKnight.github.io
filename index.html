@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="figura.js"></script>
+        <script src="index.js"></script>
+        <script src="p5.js"></script>
+        <link href="estilo.css"
+              type="text/css"
+              rel="stylesheet">
+        <link id="estilo_ocultar"
+              href="index.css"
+              type="text/css"
+              rel="stylesheet">
+    </head>
+    <body>
+        <div id="titulo">
+            <label>
+                <span>Propietario:</span> 
+                <input>
+            </label>
+            <label>
+                <span>Ubicación:</span>
+                <input>
+            </label>
+        </div>
+        
+        
+        <div style="grid-area: titulo_perfil" class="titulo">
+            Perfil Geologico
+        </div>
+        <table>
+            <tr>
+                <td colspan="2"><button onclick="anadirFila()">Agregar fila</button></td>
+            </tr>
+        </table>
+        <div style="grid-area: titulo_habilitacion" class="titulo">
+            Habilitación Definitiva
+        </div>
+        <div id="habilitacion" style="grid-area: dibujo; position:relative;">
+            <div id="bosquejo"></div>
+            
+        </div>
+        
+        <br>
+        <button id="btn_imprimir" onclick="imprimir()">Imprimir informe</button>
+    </body>
+</html>

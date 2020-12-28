@@ -1,0 +1,11 @@
+input{
+    border-color: transparent;
+}
+
+button{
+    display: none;
+}
+
+table tr:last-child{
+    display: none;
+}
